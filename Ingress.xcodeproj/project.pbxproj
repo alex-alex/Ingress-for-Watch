@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA626FD21B2BDF3100EEE616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA626FC91B2BDF3100EEE616 /* AppDelegate.swift */; };
+		FA626FD41B2BDF3100EEE616 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA626FCC1B2BDF3100EEE616 /* LaunchScreen.storyboard */; };
+		FA626FD51B2BDF3100EEE616 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA626FCE1B2BDF3100EEE616 /* Main.storyboard */; };
+		FA626FD71B2BDF3100EEE616 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA626FD11B2BDF3100EEE616 /* ViewController.swift */; };
+		FA626FDF1B2BDF5000EEE616 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA626FDA1B2BDF5000EEE616 /* Interface.storyboard */; };
+		FA626FE01B2BDF5000EEE616 /* Coda-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA626FDC1B2BDF5000EEE616 /* Coda-Regular.ttf */; };
+		FA626FE81B2BDF8500EEE616 /* AcquiredInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA626FE21B2BDF8500EEE616 /* AcquiredInterfaceController.swift */; };
+		FA626FE91B2BDF8500EEE616 /* FiringInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA626FE31B2BDF8500EEE616 /* FiringInterfaceController.swift */; };
+		FA626FEA1B2BDF8500EEE616 /* HackingInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA626FE41B2BDF8500EEE616 /* HackingInterfaceController.swift */; };
+		FA626FEB1B2BDF8500EEE616 /* ImageInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA626FE51B2BDF8500EEE616 /* ImageInterfaceController.swift */; };
+		FA626FEC1B2BDF8500EEE616 /* LoadingInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA626FE61B2BDF8500EEE616 /* LoadingInterfaceController.swift */; };
+		FA626FED1B2BDF8500EEE616 /* PortalInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA626FE71B2BDF8500EEE616 /* PortalInterfaceController.swift */; };
+		FA626FEF1B2BDF9800EEE616 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA626FEE1B2BDF9800EEE616 /* GlanceController.swift */; };
+		FA626FF51B2BDFA700EEE616 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA626FF11B2BDFA700EEE616 /* ExtensionDelegate.swift */; };
+		FA626FF71B2BDFA700EEE616 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA626FF31B2BDFA700EEE616 /* Utilities.swift */; };
+		FA626FFB1B2BE06800EEE616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA626FFA1B2BE06800EEE616 /* Assets.xcassets */; };
+		FA626FFF1B2BE09800EEE616 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA626FFE1B2BE09800EEE616 /* Images.xcassets */; };
+		FA9184C41B289A2900E08416 /* Ingress.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FA9184C31B289A2900E08416 /* Ingress.app */; };
+		FA9184D31B289A2900E08416 /* Ingress.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FA9184D21B289A2900E08416 /* Ingress.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA9184C51B289A2900E08416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA9184A91B289A2900E08416 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA9184C21B289A2900E08416;
+			remoteInfo = "Ingreess WatchKit App";
+		};
+		FA9184D41B289A2900E08416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA9184A91B289A2900E08416 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA9184D11B289A2900E08416;
+			remoteInfo = "Ingreess WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA9184E31B289A2900E08416 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FA9184D31B289A2900E08416 /* Ingress.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9184E71B289A2900E08416 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FA9184C41B289A2900E08416 /* Ingress.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FA626FC91B2BDF3100EEE616 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Ingress/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		FA626FCD1B2BDF3100EEE616 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA626FCF1B2BDF3100EEE616 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		FA626FD01B2BDF3100EEE616 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Ingress/Info.plist; sourceTree = SOURCE_ROOT; };
+		FA626FD11B2BDF3100EEE616 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Ingress/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		FA626FDB1B2BDF5000EEE616 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Interface.storyboard; sourceTree = "<group>"; };
+		FA626FDC1B2BDF5000EEE616 /* Coda-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Coda-Regular.ttf"; path = "Ingress WatchKit App/Coda-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+		FA626FE21B2BDF8500EEE616 /* AcquiredInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AcquiredInterfaceController.swift; path = "Ingress WatchKit Extension/AcquiredInterfaceController.swift"; sourceTree = SOURCE_ROOT; };
+		FA626FE31B2BDF8500EEE616 /* FiringInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FiringInterfaceController.swift; path = "Ingress WatchKit Extension/FiringInterfaceController.swift"; sourceTree = SOURCE_ROOT; };
+		FA626FE41B2BDF8500EEE616 /* HackingInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HackingInterfaceController.swift; path = "Ingress WatchKit Extension/HackingInterfaceController.swift"; sourceTree = SOURCE_ROOT; };
+		FA626FE51B2BDF8500EEE616 /* ImageInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageInterfaceController.swift; path = "Ingress WatchKit Extension/ImageInterfaceController.swift"; sourceTree = SOURCE_ROOT; };
+		FA626FE61B2BDF8500EEE616 /* LoadingInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingInterfaceController.swift; path = "Ingress WatchKit Extension/LoadingInterfaceController.swift"; sourceTree = SOURCE_ROOT; };
+		FA626FE71B2BDF8500EEE616 /* PortalInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PortalInterfaceController.swift; path = "Ingress WatchKit Extension/PortalInterfaceController.swift"; sourceTree = SOURCE_ROOT; };
+		FA626FEE1B2BDF9800EEE616 /* GlanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlanceController.swift; path = "Ingress WatchKit Extension/GlanceController.swift"; sourceTree = SOURCE_ROOT; };
+		FA626FF11B2BDFA700EEE616 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExtensionDelegate.swift; path = "Ingress WatchKit Extension/ExtensionDelegate.swift"; sourceTree = SOURCE_ROOT; };
+		FA626FF21B2BDFA700EEE616 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Ingress WatchKit Extension/Info.plist"; sourceTree = SOURCE_ROOT; };
+		FA626FF31B2BDFA700EEE616 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = "Ingress WatchKit Extension/Utilities.swift"; sourceTree = SOURCE_ROOT; };
+		FA626FFA1B2BE06800EEE616 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Ingress/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		FA626FFE1B2BE09800EEE616 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Ingress WatchKit App/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		FA6270001B2BE16E00EEE616 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Ingress WatchKit App/Info.plist"; sourceTree = SOURCE_ROOT; };
+		FA9184B11B289A2900E08416 /* Ingress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ingress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9184C31B289A2900E08416 /* Ingress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ingress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9184D21B289A2900E08416 /* Ingress.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Ingress.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA9184AE1B289A2900E08416 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9184CF1B289A2900E08416 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA9184A81B289A2900E08416 = {
+			isa = PBXGroup;
+			children = (
+				FA9184B31B289A2900E08416 /* Ingress */,
+				FA9184C71B289A2900E08416 /* Ingreess WatchKit App */,
+				FA9184D61B289A2900E08416 /* Ingreess WatchKit Extension */,
+				FA9184B21B289A2900E08416 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA9184B21B289A2900E08416 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA9184B11B289A2900E08416 /* Ingress.app */,
+				FA9184C31B289A2900E08416 /* Ingress.app */,
+				FA9184D21B289A2900E08416 /* Ingress.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA9184B31B289A2900E08416 /* Ingress */ = {
+			isa = PBXGroup;
+			children = (
+				FA626FC91B2BDF3100EEE616 /* AppDelegate.swift */,
+				FA626FD11B2BDF3100EEE616 /* ViewController.swift */,
+				FA626FCC1B2BDF3100EEE616 /* LaunchScreen.storyboard */,
+				FA626FCE1B2BDF3100EEE616 /* Main.storyboard */,
+				FA626FFA1B2BE06800EEE616 /* Assets.xcassets */,
+				FA626FD01B2BDF3100EEE616 /* Info.plist */,
+			);
+			name = Ingress;
+			path = Ingreess;
+			sourceTree = "<group>";
+		};
+		FA9184C71B289A2900E08416 /* Ingreess WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				FA626FDA1B2BDF5000EEE616 /* Interface.storyboard */,
+				FA626FDC1B2BDF5000EEE616 /* Coda-Regular.ttf */,
+				FA626FFE1B2BE09800EEE616 /* Images.xcassets */,
+				FA6270001B2BE16E00EEE616 /* Info.plist */,
+			);
+			path = "Ingreess WatchKit App";
+			sourceTree = "<group>";
+		};
+		FA9184D61B289A2900E08416 /* Ingreess WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FA9184ED1B289C4C00E08416 /* Interfaces */,
+				FA9185001B289CAE00E08416 /* Glance */,
+				FA626FF11B2BDFA700EEE616 /* ExtensionDelegate.swift */,
+				FA626FF31B2BDFA700EEE616 /* Utilities.swift */,
+				FA626FF21B2BDFA700EEE616 /* Info.plist */,
+			);
+			path = "Ingreess WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		FA9184ED1B289C4C00E08416 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				FA626FE61B2BDF8500EEE616 /* LoadingInterfaceController.swift */,
+				FA626FE71B2BDF8500EEE616 /* PortalInterfaceController.swift */,
+				FA626FE51B2BDF8500EEE616 /* ImageInterfaceController.swift */,
+				FA626FE41B2BDF8500EEE616 /* HackingInterfaceController.swift */,
+				FA626FE21B2BDF8500EEE616 /* AcquiredInterfaceController.swift */,
+				FA626FE31B2BDF8500EEE616 /* FiringInterfaceController.swift */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		FA9185001B289CAE00E08416 /* Glance */ = {
+			isa = PBXGroup;
+			children = (
+				FA626FEE1B2BDF9800EEE616 /* GlanceController.swift */,
+			);
+			name = Glance;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA9184B01B289A2900E08416 /* Ingress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA9184E81B289A2900E08416 /* Build configuration list for PBXNativeTarget "Ingress" */;
+			buildPhases = (
+				FA9184AD1B289A2900E08416 /* Sources */,
+				FA9184AE1B289A2900E08416 /* Frameworks */,
+				FA9184AF1B289A2900E08416 /* Resources */,
+				FA9184E71B289A2900E08416 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA9184C61B289A2900E08416 /* PBXTargetDependency */,
+			);
+			name = Ingress;
+			productName = Ingreess;
+			productReference = FA9184B11B289A2900E08416 /* Ingress.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA9184C21B289A2900E08416 /* Ingress WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA9184E41B289A2900E08416 /* Build configuration list for PBXNativeTarget "Ingress WatchKit App" */;
+			buildPhases = (
+				FA9184C11B289A2900E08416 /* Resources */,
+				FA9184E31B289A2900E08416 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA9184D51B289A2900E08416 /* PBXTargetDependency */,
+			);
+			name = "Ingress WatchKit App";
+			productName = "Ingreess WatchKit App";
+			productReference = FA9184C31B289A2900E08416 /* Ingress.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FA9184D11B289A2900E08416 /* Ingress WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA9184E01B289A2900E08416 /* Build configuration list for PBXNativeTarget "Ingress WatchKit Extension" */;
+			buildPhases = (
+				FA9184CE1B289A2900E08416 /* Sources */,
+				FA9184CF1B289A2900E08416 /* Frameworks */,
+				FA9184D01B289A2900E08416 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ingress WatchKit Extension";
+			productName = "Ingreess WatchKit Extension";
+			productReference = FA9184D21B289A2900E08416 /* Ingress.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA9184A91B289A2900E08416 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Alex Studnicka";
+				TargetAttributes = {
+					FA9184B01B289A2900E08416 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = FDEPQUD75A;
+					};
+					FA9184C21B289A2900E08416 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = FDEPQUD75A;
+					};
+					FA9184D11B289A2900E08416 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = FDEPQUD75A;
+					};
+				};
+			};
+			buildConfigurationList = FA9184AC1B289A2900E08416 /* Build configuration list for PBXProject "Ingress" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA9184A81B289A2900E08416;
+			productRefGroup = FA9184B21B289A2900E08416 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA9184B01B289A2900E08416 /* Ingress */,
+				FA9184C21B289A2900E08416 /* Ingress WatchKit App */,
+				FA9184D11B289A2900E08416 /* Ingress WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA9184AF1B289A2900E08416 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA626FD51B2BDF3100EEE616 /* Main.storyboard in Resources */,
+				FA626FFB1B2BE06800EEE616 /* Assets.xcassets in Resources */,
+				FA626FD41B2BDF3100EEE616 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9184C11B289A2900E08416 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA626FDF1B2BDF5000EEE616 /* Interface.storyboard in Resources */,
+				FA626FFF1B2BE09800EEE616 /* Images.xcassets in Resources */,
+				FA626FE01B2BDF5000EEE616 /* Coda-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9184D01B289A2900E08416 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA9184AD1B289A2900E08416 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA626FD21B2BDF3100EEE616 /* AppDelegate.swift in Sources */,
+				FA626FD71B2BDF3100EEE616 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9184CE1B289A2900E08416 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA626FF51B2BDFA700EEE616 /* ExtensionDelegate.swift in Sources */,
+				FA626FEC1B2BDF8500EEE616 /* LoadingInterfaceController.swift in Sources */,
+				FA626FF71B2BDFA700EEE616 /* Utilities.swift in Sources */,
+				FA626FED1B2BDF8500EEE616 /* PortalInterfaceController.swift in Sources */,
+				FA626FE91B2BDF8500EEE616 /* FiringInterfaceController.swift in Sources */,
+				FA626FEF1B2BDF9800EEE616 /* GlanceController.swift in Sources */,
+				FA626FEA1B2BDF8500EEE616 /* HackingInterfaceController.swift in Sources */,
+				FA626FE81B2BDF8500EEE616 /* AcquiredInterfaceController.swift in Sources */,
+				FA626FEB1B2BDF8500EEE616 /* ImageInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA9184C61B289A2900E08416 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA9184C21B289A2900E08416 /* Ingress WatchKit App */;
+			targetProxy = FA9184C51B289A2900E08416 /* PBXContainerItemProxy */;
+		};
+		FA9184D51B289A2900E08416 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA9184D11B289A2900E08416 /* Ingress WatchKit Extension */;
+			targetProxy = FA9184D41B289A2900E08416 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA626FCC1B2BDF3100EEE616 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA626FCD1B2BDF3100EEE616 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ../Ingress/Base.lproj;
+			sourceTree = "<group>";
+		};
+		FA626FCE1B2BDF3100EEE616 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA626FCF1B2BDF3100EEE616 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ../Ingress/Base.lproj;
+			sourceTree = "<group>";
+		};
+		FA626FDA1B2BDF5000EEE616 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA626FDB1B2BDF5000EEE616 /* Base */,
+			);
+			name = Interface.storyboard;
+			path = "../Ingress WatchKit App/Base.lproj";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA9184DE1B289A2900E08416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA9184DF1B289A2900E08416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA9184E11B289A2900E08416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/Ingress WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.studnicka.Ingreess.watchkitapp.watchkitextension;
+				PRODUCT_NAME = Ingress;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		FA9184E21B289A2900E08416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/Ingress WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.studnicka.Ingreess.watchkitapp.watchkitextension;
+				PRODUCT_NAME = Ingress;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		FA9184E51B289A2900E08416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Ingreess_WatchKit_Extension;
+				INFOPLIST_FILE = "$(SRCROOT)/Ingress WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = me.studnicka.Ingreess.watchkitapp;
+				PRODUCT_NAME = Ingress;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		FA9184E61B289A2900E08416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Ingreess_WatchKit_Extension;
+				INFOPLIST_FILE = "$(SRCROOT)/Ingress WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = me.studnicka.Ingreess.watchkitapp;
+				PRODUCT_NAME = Ingress;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		FA9184E91B289A2900E08416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/Ingress/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.studnicka.Ingreess;
+				PRODUCT_NAME = Ingress;
+			};
+			name = Debug;
+		};
+		FA9184EA1B289A2900E08416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/Ingress/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.studnicka.Ingreess;
+				PRODUCT_NAME = Ingress;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA9184AC1B289A2900E08416 /* Build configuration list for PBXProject "Ingress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9184DE1B289A2900E08416 /* Debug */,
+				FA9184DF1B289A2900E08416 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA9184E01B289A2900E08416 /* Build configuration list for PBXNativeTarget "Ingress WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9184E11B289A2900E08416 /* Debug */,
+				FA9184E21B289A2900E08416 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA9184E41B289A2900E08416 /* Build configuration list for PBXNativeTarget "Ingress WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9184E51B289A2900E08416 /* Debug */,
+				FA9184E61B289A2900E08416 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA9184E81B289A2900E08416 /* Build configuration list for PBXNativeTarget "Ingress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9184E91B289A2900E08416 /* Debug */,
+				FA9184EA1B289A2900E08416 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA9184A91B289A2900E08416 /* Project object */;
+}

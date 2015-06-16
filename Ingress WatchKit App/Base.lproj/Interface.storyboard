@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8121.17" systemVersion="15A178w" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HqC-XH-omT" defaultGlanceController="gIW-Qt-NiQ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8066.14"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Coda-Regular.ttf">
+            <string>Coda-Regular</string>
+            <string>Coda-Regular</string>
+            <string>Coda-Regular</string>
+            <string>Coda-Regular</string>
+            <string>Coda-Regular</string>
+            <string>Coda-Regular</string>
+            <string>Coda-Regular</string>
+            <string>Coda-Regular</string>
+            <string>Coda-Regular</string>
+            <string>Coda-Regular</string>
+            <string>Coda-Regular</string>
+            <string>Coda-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Loading Interface Controller-->
+        <scene sceneID="3gE-m1-XP1">
+            <objects>
+                <controller id="HqC-XH-omT" customClass="LoadingInterfaceController" customModule="Ingreess_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="1" alignment="left" textAlignment="center" numberOfLines="0" id="UkC-FP-Vrz">
+                            <string key="text">LOADING
+INTEL DATA...</string>
+                            <color key="textColor" red="0.0" green="0.7843137255" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" name="Coda-Regular" family="Coda" pointSize="16"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="287" y="309"/>
+        </scene>
+        <!--Portal-->
+        <scene sceneID="7fO-O9-d6N">
+            <objects>
+                <controller identifier="PortalController" title="Portal" id="HIw-cH-3SX" customClass="PortalInterfaceController" customModule="Ingreess_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="15" alignment="left" text="Portal Name" textAlignment="center" minimumScaleFactor="0.75" id="jCf-v6-md2">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" name="Coda-Regular" family="Coda" pointSize="14"/>
+                        </label>
+                        <button alignment="left" id="TcP-L8-d8Q">
+                            <group key="contentGroup" width="1" height="0.5" heightAdjustment="-10" alignment="left" id="ihQ-ct-7PT">
+                                <items>
+                                    <imageView width="1" height="1" alignment="left" contentMode="scaleAspectFill" id="1c1-bV-TBA"/>
+                                </items>
+                            </group>
+                            <connections>
+                                <action selector="displayImage" destination="HIw-cH-3SX" id="rIP-DT-jDP"/>
+                            </connections>
+                        </button>
+                        <map height="0.5" heightAdjustment="-10" alignment="left" id="uZK-Lk-Fap"/>
+                    </items>
+                    <connections>
+                        <outlet property="nameLabel" destination="jCf-v6-md2" id="qlN-ue-xrG"/>
+                        <outlet property="portalImage" destination="1c1-bV-TBA" id="RSJ-xo-sQZ"/>
+                        <outlet property="portalMap" destination="uZK-Lk-Fap" id="oPr-6P-fsQ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="570" y="309"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="ale-sJ-yoN">
+            <objects>
+                <glanceController spacing="0.0" topTemplateType="largeBody1" id="gIW-Qt-NiQ" customClass="GlanceController" customModule="Ingreess_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="AppleWatchTest" minimumScaleFactor="0.40000000000000013" id="ZEj-T1-eIn">
+                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label alignment="left" text="Level 1" id="plN-7h-Cw0">
+                            <color key="textColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <group alignment="left" layout="vertical" id="1zH-r3-V7N">
+                            <items>
+                                <separator alignment="left" id="SbB-kF-iQv"/>
+                                <label width="1" alignment="left" text="0 / 2,500 AP" textAlignment="center" id="baE-rb-BkH">
+                                    <color key="textColor" red="0.0" green="0.7843137255" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                                <label width="1" alignment="left" text="3,000 / 3,000 AP" textAlignment="center" id="pbF-TU-UH1">
+                                    <color key="textColor" red="0.0" green="0.7843137255" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="287" y="612"/>
+        </scene>
+        <!--Hacking-->
+        <scene sceneID="rCf-tl-Gmz">
+            <objects>
+                <controller identifier="Hacking" id="gLY-EL-i4n" customClass="HackingInterfaceController" customModule="Ingress_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="1" alignment="left" text="HACKING..." textAlignment="center" id="dUa-MB-dt3">
+                            <color key="textColor" red="0.0" green="0.7843137255" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" name="Coda-Regular" family="Coda" pointSize="16"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="849" y="612"/>
+        </scene>
+        <!--Overview-->
+        <scene sceneID="UDR-Aj-7S8">
+            <objects>
+                <controller identifier="Overview" id="X8n-nK-mqa">
+                    <items>
+                        <label width="1" alignment="left" text="AppleWatchTest" textAlignment="center" id="qa4-4a-N4H">
+                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" name="Coda-Regular" family="Coda" pointSize="16"/>
+                        </label>
+                        <label width="1" alignment="left" text="Level 1" textAlignment="center" id="o1c-lI-nCF">
+                            <color key="textColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" name="Coda-Regular" family="Coda" pointSize="16"/>
+                        </label>
+                        <separator alignment="left" id="pXv-uL-zc5"/>
+                        <label width="1" alignment="left" text="0 / 2,500 AP" textAlignment="center" id="RwN-5b-l83">
+                            <color key="textColor" red="0.0" green="0.7843137255" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" name="Coda-Regular" family="Coda" pointSize="16"/>
+                        </label>
+                        <label width="1" alignment="left" text="3,000 / 3,000 AP" textAlignment="center" id="AHh-yM-J2f">
+                            <color key="textColor" red="0.0" green="0.7843137255" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" name="Coda-Regular" family="Coda" pointSize="16"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="570" y="612"/>
+        </scene>
+        <!--Close-->
+        <scene sceneID="4R0-Xw-K36">
+            <objects>
+                <controller identifier="Acquired" title="Close" id="YMe-Fv-H1U">
+                    <items>
+                        <label width="1" alignment="left" text="ITEMS ACQUIRED" textAlignment="center" id="PUn-dJ-pt2">
+                            <color key="textColor" red="0.0" green="0.7843137255" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" name="Coda-Regular" family="Coda" pointSize="16"/>
+                        </label>
+                        <separator alignment="left" alpha="0.0" id="Uyd-N5-pKn"/>
+                        <label width="1" height="18" alignment="left" text="1x L8 Resonator" textAlignment="left" id="Urm-vM-ply">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" name="Coda-Regular" family="Coda" pointSize="16"/>
+                        </label>
+                        <label width="1" height="18" alignment="left" text="3x L7 Resonator" textAlignment="left" id="VcR-Kw-k2I">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" name="Coda-Regular" family="Coda" pointSize="16"/>
+                        </label>
+                        <label width="1" height="18" alignment="left" text="4x L8 XMP" textAlignment="left" id="xSN-Zq-ir1">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" name="Coda-Regular" family="Coda" pointSize="16"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1104" y="612"/>
+        </scene>
+        <!--< Back-->
+        <scene sceneID="rcZ-Mv-jdn">
+            <objects>
+                <controller identifier="Image" title="&lt; Back" id="Q3Z-53-WPY" customClass="ImageInterfaceController" customModule="Ingress_WatchKit_Extension">
+                    <items>
+                        <imageView width="1" height="1" alignment="left" contentMode="scaleAspectFit" id="v9m-KC-AZt"/>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="v9m-KC-AZt" id="ln8-t7-zMj"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="849" y="309"/>
+        </scene>
+        <!--Firing-->
+        <scene sceneID="eiX-rN-CZG">
+            <objects>
+                <controller identifier="Firing" id="O86-ET-jB1" customClass="FiringInterfaceController" customModule="Ingress_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="1" alignment="left" text="FIRING..." textAlignment="center" id="vvT-Yv-uGC">
+                            <color key="textColor" red="0.0" green="0.7843137255" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" name="Coda-Regular" family="Coda" pointSize="16"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="849" y="912"/>
+        </scene>
+    </scenes>
+</document>
